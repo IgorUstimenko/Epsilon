@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Epsilon</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content_wrapper">
+            <header>
+                <img src="./img/Logo.svg" alt="Logo">
+                <nav role="navigation">
+                    <ul>
+                        <li><a href="#" class="active">Главная</a></li>
+                        <li class="drop_down_li"><a href="#" aria-haspopup="true">Услуги<span class="arrow"></span></a>
+                            <ul class="dropdown" aria-label="submenu">
+                                <div class="left-side">
+                                    <li><a href="#">Юридические</a>
+                                        <div class="low-options">
+                                            <a href="!#">&#8212 Услуга 1</a><br>
+                                            <a href="!#">&#8212 Услуга 2</a><br>
+                                            <a href="!#">&#8212 Услуга 3</a><br>
+                                            <a href="!#">&#8212 Услуга 4</a><br>
+                                        </div>
+                                        <!-- /.low-options -->
+                                    </li>
+                                    <li><a href="#">Бухгалтерия</a></li>
+                                    <li><a href="#">Охрана труда</a></li>
+                                </div>
+                                <div class="right_side">
+                                    <li><a href="#">Техническое
+                                            диагностирование
+                                            ВДГО</a></li>
+                                    <li><a href="#">Проверка<br>
+                                            вентканалов</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href="#">О нас</a></li>
+                    </ul>
+                </nav>
+                <a href="#openModal">
+                    <div class="pass">
+                        Оставить заявку
+                    </div>
+                </a>
+                <div id="openModal" class="modalDialog">
+                    <div class="modal_wrapper">
+                        <div class="request">
+                            <h1>Оставить заявку</h1>
+                            <h2>Тут текст находится. Тут находится текст. Тут текст находится. Тут находится текст.</h2>
+                            <div class="form-wrapper">
+                                <div class="form-group ">
+                                    <label class="label" for="">Вид услуги: </label>
+                                    <input type="text" class="form-control" id="" name="user_name"
+                                        placeholder="Юридические услуги">
+                                </div>
+                                <div class="form-group name">
+                                    <label class="label" for="">Ваше имя</label>
+                                    <input type="text" class="form-control" id="" name="user_name"
+                                        placeholder="Ваше имя...">
+                                </div>
+                                <div class="form-group name">
+                                    <label class="label" for="">Ваш номер телефона</label>
+                                    <input type="text" class="form-control" id="" name="user_phone"
+                                        placeholder="+ 7 (918) 524-13-33">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Оставить заявку</button>
+                            </div>
+                            <!-- /.form-wrapper -->
+                        </div>
+                        <!-- /.request -->
+                        <div class="right_img">
+                            <a href="#close" title="Закрыть" class="close"></a>
+
+                        </div>
+                        <!-- /.sky_img -->
+                    </div>
+                    <!-- modal_wrapper -->
+                </div>
+                <!-- modalDialog -->
+            </header>
+            <section class="main_section">
+                <div class="descr">
+                    <h1>
+                        Юридические услуги
+                    </h1>
+                    <p>
+                        Юридические услуги всех услуг юридических. Самые услуги и самые юридические. Юридические услуги
+                        всех
+                        услуг юридических.
+                        Самые услуги и самые юридические.
+                    </p>
+                    <a href="#!">
+                        <div class="more-btn">
+                            <b>Узнать подробнее</b>
+                        </div>
+                    </a>
+                </div>
+                <!-- /.descr -->
+            </section>
+        </div>
+        <!-- /.content_wrapper -->
+        <a href="!#">
+            <img class="Vk" src="./img/Vk.svg" alt="Vk">
+        </a>
+        <footer>
+            <div class="tabs">
+                <div class="section">
+                    <div class="numb">
+                        01
+                    </div>
+                    <!-- /.numb -->
+                    <div class="numbdescr">
+                        Юридические услуги
+                    </div>
+                    <!-- /.numbdescr -->
+                </div>
+                <div class="section second_padding">
+                    <div class="numb">
+                        02
+                    </div>
+                    <!-- /.numb -->
+                    <div class="numbdescr">
+                        Техническое
+                        диагности-
+                        рование
+                    </div>
+                    <!-- /.numbdescr -->
+                </div>
+                <div class="section padding">
+                    <div class="numb">
+                        03
+                    </div>
+                    <!-- /.numb -->
+                    <div class="numbdescr">
+                        Строительные
+                        работы
+                    </div>
+                    <!-- /.numbdescr -->
+                </div>
+                <!-- /.tabs -->
+
+        </footer>
+
+    </div>
+    <!-- /.container -->
+</body>
+
+</html>

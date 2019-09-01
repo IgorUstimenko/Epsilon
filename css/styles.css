@@ -1,0 +1,497 @@
+:root {
+    font-size: calc(100vw / 80);
+    /* 24px */
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(../img/main-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content_wrapper {
+    flex: 1 0 auto;
+}
+
+/************Навигационное меню************/
+
+header {
+    display: flex;
+}
+
+header>img {
+    margin-left: 6.75em;
+    width: 1.833rem;
+    height: 1.083rem;
+    margin-top: 1.95em;
+}
+
+nav {
+    margin-left: 20.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.one {
+    display: flex;
+}
+
+ul {
+    background: #fff;
+
+}
+
+li {
+    color: black;
+    background: transparent;
+    display: block;
+    float: left;
+    padding: 1.5em 2.215em 1.55em 2.214em;
+    position: relative;
+    font-size: 1.167rem;
+    font-weight: 500;
+    line-height: 1.641rem;
+
+}
+
+.active {
+    font-weight: 700;
+}
+
+li a {
+    color: #fff;
+}
+
+li:hover,
+li:focus-within {
+    background-color: #fff;
+    transition-duration: 0.5s;
+}
+
+li:focus-within a {
+    outline: none;
+}
+
+li:hover a {
+    color: black;
+}
+
+
+ul li ul {
+    background: #fff;
+    opacity: 0;
+    min-width: 27.7rem;
+    position: absolute;
+    margin-top: 1.8rem;
+    left: 0;
+    display: none;
+    visibility: hidden;
+}
+
+/* выпадающее меню */
+
+ul li ul li {
+    font-size: 0.833rem;
+    font-weight: 600;
+    line-height: 1.172rem;
+    margin-left: 2.6em;
+}
+
+/* пункты в выпадющем меню */
+
+ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+}
+
+ul li ul li {
+    clear: both;
+}
+
+
+.arrow {
+    color: #fff;
+    border-top: 0.277em solid;
+    border-left: 0.277em solid transparent;
+    border-right: 0.277em solid transparent;
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    margin-top: 0.6em;
+    margin-left: 0.45em;
+}
+
+li:hover span {
+    color: black;
+    border-top: 0;
+    border-bottom: 0.277em solid;
+    border-left: 0.277em solid transparent;
+    border-right: 0.277em solid transparent;
+}
+
+.drop_down_li {
+    padding: 1.5em 3.2em 1.55em 2.214em;
+}
+
+
+/* ************drop_down*********** */
+
+/* *****second_drop_down************ */
+
+.low-options {
+    display: block;
+    position: relative;
+    margin-top: 1.125em;
+
+}
+
+.low-options>a {
+    color: #000000;
+    font-size: 0.667rem;
+    font-weight: 500;
+    line-height: 0.938rem;
+    margin-left: 0.8em;
+    line-height: 1.641rem;
+}
+
+.right_side {
+    margin-left: -0.85em;
+    margin-top: 1em;
+}
+
+.right_side li+li {
+    margin-top: -1.4em;
+
+}
+
+.left-side {
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+.left-side li+li {
+    margin-top: -1.3em;
+}
+
+/* Кнопка оставить заявку */
+.pass {
+    font-size: 0.75rem;
+    width: 12.6666rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border: 0.1em solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4.333rem;
+    margin-left: 3.5em;
+    margin-top: 1.7em;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 2.4em;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 0.3888em;
+}
+
+
+/* main_section */
+
+.descr {
+    margin-left: 10.08333em;
+    margin-top: 17vh;
+}
+
+.descr h1 {
+    color: #ffffff;
+    font-size: 2.667rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+    padding-bottom: 0.578125em;
+}
+
+.descr p {
+    opacity: 0.6;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.55rem;
+    max-width: 25rem;
+    white-space: wrap;
+    padding-bottom: 4.08em;
+}
+
+
+.more-btn {
+    max-width: 16.042rem;
+    height: 2.958rem;
+    border-radius: 4.167rem;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 1em;
+}
+
+
+footer {
+    display: flex;
+    flex: 0 0 auto;
+}
+
+
+.Vk {
+    width: 1.792rem;
+    height: 1rem;
+    margin-left: 6.8em;
+    margin-bottom: 2em;
+}
+
+/* Табы */
+
+.section {
+    position: absolute;
+    bottom: 0em;
+    height: 7.542rem;
+    width: 9.292rem;
+    background-color: #ffffff;
+}
+
+.section:hover {
+    animation: padding-up 1s;
+    animation-fill-mode: forwards;
+    background-color: #000;
+    background-image: url(../img/first_tab.png);
+}
+
+.section:hover .numb {
+    color: #fff;
+}
+
+.section:hover .numbdescr {
+    color: #fff;
+}
+
+@keyframes padding-up {
+    from {
+        padding-top: 0;
+    }
+
+    to {
+        padding-top: 6.225em;
+    }
+}
+
+.numb {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.049rem;
+    line-height: 1.055rem;
+    padding-top: 1.38888em;
+    padding-left: 1.6663em;
+}
+
+.numbdescr {
+    padding-top: 2.222em;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.055rem;
+    padding-left: 1.6663em;
+}
+
+.tabs {
+    display: flex;
+    margin-left: 38.85em;
+    position: relative;
+    margin-left: 45.4em;
+}
+
+
+.second_padding {
+    margin-left: 9.29em;
+}
+
+.padding {
+    margin-left: 18.58em;
+}
+
+/******************* modal********************* */
+
+
+.modalDialog {
+    position: fixed;
+    font-family: Montserrat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog>.modal_wrapper {
+    width: 53.083rem;
+    height: 30.708rem;
+    position: relative;
+    margin-top: 7.166em;
+    margin-left: 13.45833em;
+    background: #fff;
+    display: flex;
+}
+
+.close {
+    position: absolute;
+    left: 50.3em;
+    top: 1.53em;
+    width: 1rem;
+    height: 1rem;
+    opacity: 1;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 0.625em;
+    content: ' ';
+    height: 1.25rem;
+    width: 0.17rem;
+    background-color: #fff;
+    ;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+
+
+.request {
+    height: 100%;
+    width: 50%;
+}
+
+.right_img {
+    height: 100%;
+    width: 50%;
+    background-image: url(../img/modal-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.request h1 {
+    padding-top: 1.27em;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2.461rem;
+    padding-left: 3.07em;
+
+}
+
+.request h2 {
+    padding-top: 0.45em;
+    opacity: 0.8;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    padding-left: 7.222em;
+    max-width: 22em;
+
+}
+
+/************FORM***************/
+.form-group {
+    margin-top: 2.03em;
+    padding-left: 2.55em;
+}
+
+.label {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.148rem;
+}
+
+.form-control {
+    padding-left: 1.4em;
+    margin-top: 0.4em;
+    width: 21.458rem;
+    height: 2.1rem;
+    border-radius: 0.292rem;
+    border: 0.042rem solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.01);
+    opacity: 0.8;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.148rem;
+}
+
+.services {
+    opacity: 1;
+}
+
+.btn-primary {
+    margin-left: 15.111em;
+    margin-top: 3.85em;
+    width: 12.667rem;
+    height: 2.5rem;
+    border-radius: 3.25rem;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 0.05px solid #000;
+    padding-left: 0.3888em;
+}
+
+.name {
+    margin-top: 1.4em;
+}
